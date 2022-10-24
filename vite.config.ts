@@ -7,7 +7,7 @@ export default defineConfig({
 	server: {
 		proxy: { //代理配置以避免跨域问题
 			'/api':{
-				target: 'http://localhost:3001',
+				target: 'http://localhost:3005',
 				changeOrigin: true,
 				rewrite: (path) => path.replace(/^\/api/, '')
 			},

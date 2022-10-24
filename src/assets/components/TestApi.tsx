@@ -11,6 +11,9 @@ export default function TestApi() {
 	async function getBlogData() {
 		const res = await fetch('/api/getTitles', {
 			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json'
+			}
 		})
 		const data = await res.json() //要把数据转换成json格式
 		const title = data[0].title
