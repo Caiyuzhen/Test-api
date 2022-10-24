@@ -1,7 +1,7 @@
 {
-	"rewrite": [
+	"rewrites": [
 		{
-			"source": "/api/(.*)",
+			"source": "/api/(.*)",//转发到 vercel 的函数计算 api 中去
 			"destination": "/api"
 		}
 	]
